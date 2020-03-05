@@ -1,6 +1,9 @@
-function createGrid()
+function createGrid(gridSizeHere)
 {
-    for (let d = 0; d < 256; d++)
+    userInput = prompt ("Please enter how many squares you would like per side.");
+    gridSizeHere = userInput * userInput;
+
+    for (let d = 0; d < gridSizeHere; d++)
     {
         let newDivCol = document.createElement('div');
         newDivCol.className = "newDivCol";
@@ -12,4 +15,6 @@ function createGrid()
         });
     }
 
+    container.style.gridTemplateColumns = `repeat(${userInput}, 1fr)`;
+    container.style.gridTemplateRows = `repeat(${userInput}, 1fr)`;
 }
