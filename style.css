@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap');
+* {
+    --gray: #f5f5f5;
+    --white: #f7f7f7 ;
+    --darkgray: #333;
+    --gridshadow: #555;
+    --github: #24292e;
+    --midgray: #999;
+    --lightgray: #ccc;
+    --linkedin: #0e76a8;
+    --hoverLink: #f55;
+  }
+
 .btn
 {
   width: 90px;
-  height: 40px;
+  height: 50px;
   max-width: 300px;
   display: block;
   margin: auto;
   text-align: center;
-  font-weight: bold;
   background-color: white;
+  font-weight: bold;
 }
 
 .btn:hover
@@ -23,6 +36,32 @@
   0 0 25px #ff00de,
   0 0 25px #ff00de;
 
+}
+
+.blue
+{
+  width: 90px;
+  height: 50px;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  font-weight: bold;
+}
+
+.blue:hover
+{
+  transform: scale(1.08, 1.08);
+  font-style: italic;
+  box-shadow: 0 0 10px #fff,
+  0 0 25px #fff,
+  0 0 35px #fff,
+  0 0 25px #ff00de,
+  0 0 25px #ff00de,
+  0 0 25px #ff00de,
+  0 0 25px #ff00de,
+  0 0 25px #ff00de;
 }
 
 #container
@@ -45,12 +84,12 @@ body
 
 .Etch
 {
-  font-style: italic;
+  font-family: 'Pacifico', sans-serif;
   color: white;
   text-align: center;
   text-shadow: 0 0 10px #fff,
-  0 0 20px #fff,
-  0 0 30px #fff,
+  0 0 20px #ff00de,
+  0 0 30px #ff00de,
   0 0 40px #ff00de,
   0 0 70px #ff00de,
   0 0 80px #ff00de,
@@ -61,25 +100,42 @@ body
 
 .leftknob
 {
-  height: 120px;
-  width: 120px;
+  height: 110px;
+  width: 110px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  top: 990px;
-  left: -60px;
-  
+  top: 979px;
+  left: 900px;
+  box-shadow: 10px 10px 10px gray,
+  0 0 25px gray,
+  0 0 35px gray,
+  0 0 25px gray,
+  0 0 25px gray,
+  0 0 25px gray,
+  0 0 25px gray,
+  0 0 25px gray;
+  margin-bottom: 20px;
 }
 
 .rightknob
 {
-  height: 120px;
-  width: 120px;
+  height: 110px;
+  width: 110px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  top: 990px;
-  left: 900px;
+  top: 979px;
+  right: 900px;
+  box-shadow: 10px 10px 10px gray,
+  0 0 25px gray,
+  0 0 35px gray,
+  0 0 25px gray,
+  0 0 25px gray,
+  0 0 25px gray,
+  0 0 25px gray,
+  0 0 25px gray;
+  margin-bottom: 20px;
 }
 
 
