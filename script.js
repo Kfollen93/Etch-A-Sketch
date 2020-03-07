@@ -55,19 +55,30 @@ function createGrid(gridSizeHere)
 //clear grid function to run before picking new size
 function clearGrid()
 {
-    document.getElementById('container').innerHTML = ''
+    document.getElementById('container').innerHTML = '';
 }
 
-
-
-
-
-
-
-
-
-/* I want the webpage() function to run when the website first loads. Displaying the default
-grid. Then make another function, that clears the grid to 0.
-Then have the createGrid() function work so that you can make a new grid to your size.
-I would then attach the two functions clearGrid() createGrid() to the button.
-My thought is that when you click the button it first clears it, and then prompts for new grid.*/
+//Rainbow color function
+const random256 = () => {
+    return Math.floor(Math.random() * 256);
+}
+//used arrow function here for learning
+function colorRainbow()
+{
+    let rainbowColors = document.querySelectorAll('.newDivCol');
+    rainbowColors.forEach(element => {
+        element.addEventListener('mouseover', () => {
+            element.style.backgroundColor = `rgb(${random256()}, ${random256()}, ${random256()})`;
+        });
+    });
+}
+//Didnt use arrow function this time to write it
+function colorBlue()
+{
+    let blueColor = document.querySelectorAll('.newDivCol');
+    blueColor.forEach(function(element){
+        element.addEventListener('mouseover', function(){
+            element.style.backgroundColor = 'blue';
+        });
+    });
+}
