@@ -82,3 +82,24 @@ function colorBlue()
         });
     });
 }
+
+function colorBlack()
+{
+    let blackColor = document.querySelectorAll('.newDivCol');
+    blackColor.forEach(element => {
+        element.addEventListener('mouseover', () => {
+            element.style.backgroundColor = 'black';
+        });
+    });
+}
+
+function colorWhite()
+{
+    let colorWhite = document.querySelectorAll('.newDivCol');
+    colorWhite.forEach(element => {
+        element.addEventListener('mouseover', () => {
+            element.style.backgroundColor = 'white';
+        });
+    });
+}
+
