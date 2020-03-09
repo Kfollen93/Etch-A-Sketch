@@ -9,15 +9,28 @@
 
 <body>
   <h1 class="Etch">Etch-A-Sketch</h1>
-  <button onclick="clearGrid(); createGrid();" class="btn">New Grid</button>
-  <button onclick="colorBlue();" class="blue">Colors</button>
+
+  <div class="navbar">
+    <a type="button" onclick="clearGrid(); createGrid();">Grid</a>
+    <div class="dropdown">
+      <button class="dropbtn">Colors
+        <i class="down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a type ="button" onclick="colorWhite();">White</a>
+        <a type ="button" onclick="colorBlack();">Black</a>
+        <a type ="button" onclick="colorBlue();">Blue</a>
+        <a type ="button" onclick="colorRainbow();">Rainbow</a>
+      </div>
+    </div>
+  </div>
+
 
 <div id="bigContainer"></div>
 <div id="container" class="my-container">
   <span id="knobone" class="leftknob"></span>
   <span id="knobtwo" class="rightknob"></span>
 </div>
-
 
 
 
